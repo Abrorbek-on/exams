@@ -15,6 +15,7 @@ import { MailerModule } from './common/maile/maile.module';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { SequelizeModule } from '@nestjs/sequelize';
 import { ProfilesModule } from './modules/profiles/profiles.module';
+import { SeedersModule } from './core/sider/sider.module';
 
 @Module({
   imports: [
@@ -57,6 +58,7 @@ import { ProfilesModule } from './modules/profiles/profiles.module';
     WatchHistoryModule,
     MailerModule,
     RedisModule,
+    SeedersModule
   ],
 })
 export class AppModule { }
